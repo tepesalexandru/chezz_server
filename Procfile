@@ -1,1 +1,1 @@
-worker:npm run develop
+web:npm run develop
