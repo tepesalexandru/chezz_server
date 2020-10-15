@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "comments",
+  "info": {
+    "name": "Comment"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Content": {
+      "type": "text",
+      "maxLength": 255,
+      "minLength": 2
+    },
+    "FirstName": {
+      "type": "string",
+      "required": true,
+      "minLength": 2
+    },
+    "LastName": {
+      "type": "string",
+      "required": true,
+      "minLength": 2
+    },
+    "recipe": {
+      "model": "recipe",
+      "via": "comments"
+    }
+  }
+}

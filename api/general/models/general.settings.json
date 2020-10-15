@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "generals",
+  "info": {
+    "name": "General"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "LongText": {
+      "type": "text"
+    },
+    "ShortText": {
+      "type": "string"
+    },
+    "Name": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
